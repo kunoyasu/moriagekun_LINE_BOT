@@ -1,0 +1,19 @@
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/bin/ruby -I /Users/kunoyasuyuki/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20220122-60385-1p73k96.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20220122-60385-82fet9/skiptrace/internal

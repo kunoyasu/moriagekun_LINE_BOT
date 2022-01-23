@@ -1,0 +1,38 @@
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/puma-3.12.6/ext/puma_http11
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/bin/ruby -I /Users/kunoyasuyuki/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20220122-60385-1gkdppk.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/puma-3.12.6/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/puma-3.12.6/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+mini_ssl.c:220:27: warning: 'DTLSv1_method' is deprecated [-Wdeprecated-declarations]
+  conn->ctx = SSL_CTX_new(DTLSv1_method());
+                          ^
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/openssl/include/openssl/ssl.h:1895:1: note: 'DTLSv1_method' has been explicitly marked deprecated here
+DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_method(void)) /* DTLSv1.0 */
+^
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/openssl/include/openssl/opensslconf.h:163:34: note: expanded from macro 'DEPRECATEDIN_1_1_0'
+# define DEPRECATEDIN_1_1_0(f)   DECLARE_DEPRECATED(f)
+                                 ^
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/openssl/include/openssl/opensslconf.h:121:55: note: expanded from macro 'DECLARE_DEPRECATED'
+#   define DECLARE_DEPRECATED(f)    f __attribute__ ((deprecated));
+                                                      ^
+1 warning generated.
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/puma-3.12.6/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20220122-60385-371q5j/puma

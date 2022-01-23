@@ -1,0 +1,19 @@
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/bin/ruby -I /Users/kunoyasuyuki/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20220122-60385-e69afn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+
+current directory: /Users/kunoyasuyuki/workspace/hello_hogefuga/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220122-60385-1h56yo4
