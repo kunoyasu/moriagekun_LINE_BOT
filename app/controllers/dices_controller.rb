@@ -1,7 +1,7 @@
-class EnglishesController < ApplicationController
+class DicesController < ApplicationController
   protect_from_forgery except: :callback
 
-  OMAJINAI = /アブラカタブラ|チチンプイプイ|ヒラケゴマ/
+  SAIKORO = /さいころ|サイコロ|ダイス/
 
   def callback
     client = Line::Bot::Client.new do |config|
@@ -32,22 +32,15 @@ class EnglishesController < ApplicationController
   def parse_message_type(event)
     case event.type
     when Line::Bot::Event::MessageType::Text
-      reaction_text(event)   # ユーザーが投稿したものがテキストメッセージだった場合に返す値
+        "さいころのめは #{reaction_text(event)}だ！！！"
     else
-      'Thanks!!'             # ユーザーが投稿したものがテキストメッセージ以外だった場合に返す値
+      'さいころorサイコロorダイスと入力してくれ！そしたらサイコロをふるぞ'
     end
   end
 
   def reaction_text(event)
-    if event.message['text'].match?(OMAJINAI)
-      'It is Omajinai'                          # 定数OMAJINAIに含まれる文字列の内、いずれかに一致した投稿がされた場合に返す値
-    elsif event.message['text'].match?('ruby')
-      # `ruby`という文字列が投稿された場合に返す値
-      fetch('https://animechan.vercel.app/api/random')
-    .then(response => response.json())
-    .then(quote => console.log(quote))
-    else
-      event.message['text']                     # 上記２つに合致しない投稿だった場合、投稿と同じ文字列を返す
+    if event.message['text'].match?(SAIKORO)
+        rand(1..6)
     end
   end
 end
