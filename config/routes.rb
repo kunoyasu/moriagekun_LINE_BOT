@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/callback', to: 'dices#callback'
+  post '/callback', to: 'gayas#callback'
 end
