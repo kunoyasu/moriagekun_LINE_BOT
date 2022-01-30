@@ -37,8 +37,6 @@ class GayasController < ApplicationController
     case event.type
     when Line::Bot::Event::MessageType::Text
       reaction_text(event)
-      else
-      'Thanks!!'             # ユーザーが投稿したものがテキストメッセージ以外だった場合に返す値
     end
   end
 
@@ -54,6 +52,15 @@ class GayasController < ApplicationController
 🎉🎉HAPPY BIRTHDAY!🎉🎉
 誕生日おめでとうな！！"
     # 結婚式だった場合
+    elsif event.message['text'].match?(MARRY)
+      "┈┈┈🔥🔥🔥🔥🔥🔥
+┈┈╭┻┻┻┻┻┻┻┻┻╮┈┈
+┈┈┃╱╲╱╲╱╲╱╲╱┃┈┈
+┈╭┻━━━━━━━━━┻╮┈
+┈┃╱╲╱╲╱╲╱╲╱╲╱┃┈
+┈┗━━━━━━━━━━━┛┈
+🎉🎉HAPPY WEDING!🎉🎉
+結婚おめでとうな！！"
     elsif event.message['text'].match?(ANOUNCEMENT)
      "┏┓┏┳┓ ┏━┓┏┓┏┓
 ┃┃┗┻┛ ┗━┛┃┃┃┃
@@ -94,8 +101,6 @@ class GayasController < ApplicationController
 .￣￣￣￣￣
 オジサンも成功祈ってるぞ！！
 "
-    else
-      event.message['text'] # 上記２つに合致しない投稿だった場合、投稿と同じ文字列を返す
     end
   end
 end
