@@ -1,4 +1,4 @@
-class GayasController < ApplicationController
+class MessagesController < ApplicationController
   protect_from_forgery except: :callback
 
   MARRY = /結婚|結婚式|/
