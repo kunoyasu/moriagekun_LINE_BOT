@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   MARRY = /結婚|結婚式|/
   BITRHDAY = /誕生日|誕生/
   ANOUNCEMENT = /報告|発表/
-  GOODMORNING = /おはよう|おはようござ
+  GOODMORNING = /おはよう|おはようござます/
   GLAD = /おめでとう/
   PRAY = /祈願|祈る/
 
