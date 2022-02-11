@@ -1,0 +1,50 @@
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.4/ext/msgpack
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/bin/ruby -I /Users/kunoyasuyuki/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20220211-39764-133gzvc.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... yes
+checking for rb_enc_interned_str() in ruby.h... no
+creating Makefile
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.4/ext/msgpack
+make "DESTDIR=" clean
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.4/ext/msgpack
+make "DESTDIR="
+compiling buffer.c
+compiling buffer_class.c
+buffer_class.c:261:17: warning: incompatible function pointer types passing 'VALUE (VALUE)' (aka 'unsigned long (unsigned long)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-function-pointer-types]
+                read_until_eof_error, (VALUE)(void*) args,
+                ^~~~~~~~~~~~~~~~~~~~
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
+VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                                              ^
+1 warning generated.
+compiling extension_value_class.c
+compiling factory_class.c
+compiling packer.c
+compiling packer_class.c
+compiling packer_ext_registry.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+unpacker_class.c:316:17: warning: incompatible function pointer types passing 'VALUE (VALUE)' (aka 'unsigned long (unsigned long)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-function-pointer-types]
+                Unpacker_rescue_EOFError, self,
+                ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:47: note: passing argument to parameter here
+VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                                              ^
+unpacker_class.c:225:14: warning: unused function 'Unpacker_peek_next_type' [-Wunused-function]
+static VALUE Unpacker_peek_next_type(VALUE self)
+             ^
+2 warnings generated.
+compiling unpacker_ext_registry.c
+linking shared-object msgpack/msgpack.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.4/ext/msgpack
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220211-39764-1cacyra/msgpack

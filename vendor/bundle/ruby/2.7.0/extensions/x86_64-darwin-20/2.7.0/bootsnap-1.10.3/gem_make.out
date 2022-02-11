@@ -1,0 +1,19 @@
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.10.3/ext/bootsnap
+/Users/kunoyasuyuki/.rbenv/versions/2.7.4/bin/ruby -I /Users/kunoyasuyuki/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20220211-39764-1085hvy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/zlib/lib'
+ld: warning: directory not found for option '-L/usr/local/opt/bzip2/lib'
+
+current directory: /Users/kunoyasuyuki/Desktop/english_study 20-38-23-352/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220211-39764-1bqr4vm/bootsnap
